@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acerca de nuestro proyecto</title>
+        
+        <link rel="shortcut icon" href="../../../../files/aboutus.png">
+        <link href="../../../../www-content/raid-calculator/files/about.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+
+        
+
+
+
+
+        <div class="padre">
+            <div class="hijoFooter">
+        <header>
+            <footer class="foot1">
+                
+                
+                <a title="ruta" href="index.html"><img src="../../../../files/logo-removebg-preview.png" alt="ruta"/></a>
+                
+                <nav class="nav-links">
+                    <ul class="title">
+                        <li> <a href="https://www.ues.edu.sv/">Universidad de El Salvador</a></li>
+                        
+                        <li> <a href="">Projectos</a></li>
+                        <li> <a href="index.html">Atrás</a></li>
+                    </ul>
+                    
+                    
+                </nav>
+                
+            </footer>
+            
+    
+        </header>
+    </div>
+        <div>
+
+        </div>
+        <div class="alineacion">
+            <div class="conteiner">
+     <ul>
+        <h1 class="h">Nombre del proyecto: Simulador de arreglo de discos, array 0, 1,3, 5, 01, 10</h1>
+        </ul>
+        <ul>
+        <h1>Nombre del autor y/o autores: Juan Manuel Gutiérrez & Oscar Eduardo Lopez </h1>
+    </ul>
+        <br>
+    </div>
+</div>
+            <div class="centrar">
+            
+        <h1>Resumen del proyecto:</h1>
+
+        <p>En el presente trabajo se presentará el significado de lo que es el arreglo de discos (RAID) y de igual manera el concepto de los diferentes niveles de RAID que se pondrán en practica al momento de desarrollar el simulador para demostrar como es el funcionamiento de los diferentes niveles de arreglo de discos.
+            De igual manera se podrá observar los diferentes usos que estos tienen según la cantidad de discos proporcionada y según el uso o necesidad que tenga el usuario, ya que esto cambia el resultado del arreglo de discos realizado.
+        </p>
+        <br>
+        <h1>Introducción:</h1>
+        <p>RAID proviene del acrónimo del inglés “Redundant Array of Independent Disks”, que significa matriz redundante de discos independientes. RAID es un método de combinación de varios discos para formar una unidad lógica única en la que se almacenan los datos de forma redundante. Ofrece mayor tolerancia a fallos y más altos niveles de rendimiento que un sólo disco duro o un grupo de discos duros independientes.
+            <br>
+            <br>
+            Un arreglo redundante de discos independientes (RAID por sus siglas en inglés) es típicamente implementado para la protección de la información o incremento del desempeño al acceso de los discos. Existen varios tipos de arreglos y los más usados en la industria son: 0, 1, 5 y el 0+1 ó 10, siendo este último el de mayor desempeño, protección y costo. 
+            <br>
+            <br>
+            Actualmente prevalece el uso de este tipo de configuraciones para la protección de la información, pero la industria del almacenamiento y las aplicaciones están evolucionando. Al día de hoy el fabricante de software o la industria del hardware nos entregan soluciones que nos permiten despreocuparnos en cierto grado en la definición del tipo de arreglo a utilizar o para qué archivos en específico los necesitamos. Obviamente estas soluciones son las de mayor costo y mejor desempeño.
+            <br>
+            <br>
+            La industria hace uso de los arreglos de discos porque estos ofrecen muchas ventajas como la de protección de datos y velocidad, atributos que son de gran importancia en un negocio para agilizar las tareas y tiempos de respuesta.
+            <br>
+            <br>
+            Es por ello que en el presente proyecto se abordará el tema de “Simulador de arreglo de discos, array 0, 1,3, 5, 01, 10” en el cual se verá con mayor detalle el significado de los diferentes niveles de RAID, su importancia según el nivel, su aplicación según el nivel y el resultado obtenido al realizar el arreglo de discos según la cantidad de discos involucrados y según el nivel de arreglo seleccionado.
+        </p>
+        <br>
+        <h1>Desarrollo del tema: </h1>
+        <p>Con el uso de varios discos, hay una amplia variedad de formas en las que se pueden organizar los datos, y en las que se puede añadir redundancia para mejorar la seguridad. Esto podría dificultar el desarrollo de esquemas de bases de datos que se pueden usar en numerosas plataformas y sistemas operativos. El esquema RAID consta de seis niveles independientes, desde cero hasta cinco. Estos niveles no implican una relación jerárquica, sino que designan métodos diferentes que poseen tres características comunes:
+            <br>
+            <br>
+            •	RAID es un conjunto de unidades físicas de disco vistas por el sistema operativo como una única unidad lógica.
+            <br>
+            •	Los datos se distribuyen a través de las unidades físicas del conjunto de unidades.
+            <br>
+            •	La capacidad de los discos redundantes se usa para almacenar información de paridad que garantice la recuperación de los datos en caso de fallo de disco. (STALLINGS, 2005)
+            <br>
+            <br>
+            <h2>NIVEL 0 DE RAID</h2>
+            <br>
+            El nivel 0 de RAID no es un verdadero miembro de la familia RAID, porque no incluye redundancia para mejorar las prestaciones. Sin embargo, hay algunas aplicaciones, como algunas ejecuciones en supercomputadores, en los que las prestaciones y la capacidad son la preocupación primaria y un costo bajo es más importante que mejorar la seguridad.
+            Para el RAID 0, los datos del usuario y del sistema están distribuidos a lo largo de todos los discos del conjunto. Esto tiene una notable ventaja frente al uso de un único y gran disco: si hay pendientes dos peticiones diferentes de E/S, para dos bloques de datos diferentes, entonces es muy probable que los bloques pedidos estén en diferentes discos. Entonces, las dos peticiones se pueden emitir en paralelo, reduciendo el tiempo de cola de E/S. (STALLINGS, 2005)
+            RAID 0 para alta capacidad de transferencia de datos. 
+            Las prestaciones de cualquiera de los niveles RAID dependen críticamente de los patrones de petición del sistema anfitrión y de la distribución de los datos. Estas emisiones pueden ser más claramente direccionadas en RAID 0, donde el impacto de la redundancia no interfiere con el análisis. Primero, consideremos el uso de RAID 0 para lograr una velocidad de transferencia de datos alta. Se deben cumplir dos requisitos para que las aplicaciones tengan una velocidad de transferencia alta. Primero, debe existir una capacidad de transferencia alta en todo el camino entre la memoria del anfitrión y las unidades de disco individuales. Esto incluye controladores de buses internos, buses de E/S del anfitrión, adaptadores de E/S, y buses de memoria del anfitrión.
+            RAID 0 para altas frecuencias de petición de E/S. 
+            En los entornos orientados a transacciones, el usuario se suele preocupar más del tiempo de respuesta que de la velocidad de transferencia. Para una petición individual de E/S de una pequeña cantidad de datos, el tiempo de E/S está dominado por el movimiento de las cabezas del disco (tiempo de búsqueda) y el movimiento del disco (latencia rotacional).
+            <br> 
+            <h2>NIVEL 1 DE RAID</h2>
+            <br>
+            ID 1 se diferencia de los niveles 2 al 6 en cómo se consigue la redundancia. En estos otros esquemas RAID, se usan algunas formas de cálculo de paridad para introducir redundancia; en RAID 1, la redundancia se logra con el sencillo recurso de duplicar todos los datos.
+            Pero en este caso, cada franja lógica se proyecta en dos discos físicos separados, de forma que cada disco del conjunto tiene un disco espejo que contiene los mismos datos. RAID 1 también se puede implementar sin franja de datos, pero es menos común.
+            En la organización RAID 1 hay una serie de aspectos positivos:
+            •	Una petición de lectura puede ser servida por cualquiera de los discos que contienen los datos pedidos, cualquiera de ellos implica un tiempo de búsqueda mínimo más la latencia rotacional.
+            •	Una petición de escritura requiere que las dos tiras correspondientes se actualicen, y esto se puede hacer en paralelo. Entonces, el resultado de la escritura viene determinado por la menos rápida de las dos escrituras (es decir, la que conlleva el mayor tiempo de búsqueda más la latencia rotacional). Sin embargo, en RAID 1 no hay penalización en la escritura. Por tanto, cuando se actualiza una única tira, el software de gestión del conjunto debe calcular y actualizar primero los bits de paridad, así como actualizar la tira en cuestión.
+            •	La recuperación tras un fallo es sencilla. Cuando una unidad falla, se puede acceder a los datos desde la segunda unidad.
+            <br>
+            <h2>NIVEL 3 DE RAID</h2>
+            <br>
+            La diferencia es que RAID 3 requiere solo un disco redundante, sin importar lo grande que sea el conjunto de discos. RAID 3 utiliza un acceso paralelo, con datos distribuidos en pequeñas tiras. En vez de un código de corrección de errores, se calcula un sencillo bit de paridad para el conjunto de bits individuales en la misma posición en todos los discos de datos.
+            <br>
+            <br>
+            Redundancia. En el caso de un fallo en una unidad, se accede a la unidad de paridad y se reconstruyen los datos desde el resto de los dispositivos. Una vez que se sustituye la unidad que ha fallado, los datos que faltan se restauran en la nueva unidad y se reanuda la operación.
+            <br>
+            <br>
+            Prestaciones. Puesto que los datos se dividen en tiras muy pequeñas, RAID 3 puede conseguir velocidades de transferencia de datos muy altas. Cualquier petición de E/S implicará una transferencia de datos paralela desde todos los discos de datos. Para grandes transferencias, la mejora de prestaciones es especialmente notable. Por otra parte, solo se puede ejecutar a la vez una petición de E/S. Por tanto, en un entorno orientado a transacciones, el rendimiento sufre. (STALLINGS, 2005)
+            <br>
+            <h2>NIVEL 5 DE RAID</h2>
+            <br>
+            Trata de combinar los beneficios de 0 y 1, a la vez que trata de minimizar sus desventajas.
+            Igual que 0, un RAID 5 consiste de múltiples unidades de disco, cada una dividida en particiones. Esto permite a una formación 5 ser más grande que una unidad individual.
+            <br>
+            Como en RAID 1, una formación 5 utiliza algo de espacio en disco para alguna forma de redundancia, mejorando así la confiabilidad.
+            <br>
+            Las particiones que contienen paridad hacen posible recuperar los datos si falla una de las unidades en la formación. La paridad en la partición x se calcula matemáticamente combinando los datos desde cada partición x almacenado en todas las otras unidades en la formación. Si los datos en una partición son actualizados, la correspondiente partición de paridad debe ser recalculado y actualizado también. (Libre, 2020)
+            <br>
+            
+            <h2>RAID 01</h2>
+            RAID 01 o también conocido como RAID 0+1, es otra combinación de RAID 0 y RAID 1, en el cual el nivel de RAID 0 se sitúa por encima del RAID 0, dando como resultado un espejo de divisiones.
+            <br>
+            <h2>RAID 10 (o) Mirror & Stripe</h2>
+            RAID 10 es una combinación de RAID 1 y RAID 0. Permite que las unidades se reflejen (RAID 1) y luego se dividan en bandas (RAID 0). RAID 10 es una solución que proporciona un buen rendimiento de almacenamiento (similar a RAID 0) y seguridad de datos (igual que RAID 1). (igual que RAID 1), así como un rendimiento de almacenamiento similar al RAID 0.
+            Principio de funcionamiento:
+            En la figura 1, las unidades 0 y 1 forman span 0, las unidades 2 y 3 forman span 1 y las unidades del mismo span son espejos entre sí.
+            Si las solicitudes de E/S se envían a unidades en RAID 10, las solicitudes de datos secuenciales se distribuyen a los dos tramos para su procesamiento (modo RAID 0). Al mismo tiempo, en el modo RAID 1, cuando los datos se escriben en la unidad 0, se crea una copia en la unidad 1; cuando los datos se escriben en la unidad 2, se crea una copia en la unidad 3. (Huawei, 2019)
+            <br>
+            <br>
+        </p>
+        <h1>Conclusiones</h1>
+        <p>Se concluye como equipo de trabajo que los arreglos de discos pueden ser de gran importancia según el tipo de usuario, no será imprescindible para todo usuario de un computador el cual le da un uso cotidiano, sino que tiene mayor provecho en los usuarios que poseen una empresa por ejemplo en la cual puede ser imprescindible que exista un disco de respaldo el cual posea la información de gran importancia para a empresa o que si no es de gran importancia tener un respaldo pues que el disco o la transferencia de datos sea lo mas alta posible, ya sea que se necesite que el sistema responda con mayor rapidez al consular los datos de algún cliente contenido en un disco o simplemente que se consulte otro tipo de información que se necesite de una rapidez adecuada de respuesta. Todo esto claramente variando la cantidad de discos de la que se dispongan en el computador.
+            <br>
+            <br>
+            También se concluye que con la adecuada investigación se puede realizar un algoritmo que simule perfectamente el comportamiento de los diferentes niveles de arreglos de discos disponibles, que a pesar de que algunos ya son obsoletos de igual manera es de gran importancia conocer el funcionamiento que estos ofrecían.
+            <br>
+            <br>
+            Al realizar el simulador podemos tener una previsualización de como quedara al final el arreglo de discos sin necesidad de realizarlo de manera real con los discos de nuestro computador y encontrar la sorpresa que la capacidad final no sea la que nosotros esperábamos.
+        </p>
+        <h1>Bibliografia.</h1>
+        <p>Huawei. (22 de 2 de 2019). Huawei. Obtenido de https://forum.huawei.com/enterprise/es/comparaci%C3%B3n-entre-raid-01-vs-raid-10/thread/500259-100251
+            <br>
+            Libre, C. (17 de febrero de 2020). Conocimiento Libre. Obtenido de https://conocimientolibre.mx/arregloraid/
+            <br>
+            STALLINGS, W. (2005). ORGANIZACIÓN Y ARQUITECTURA DE COMPUTADORES. Madrid: PEARSON EDUCACIÓN, S.A.
+        </p>
+
+    </div>
+</div>
+
+<footer class="pie">
+    <ul class="nav-links1">
+		<h11 class="titulo">@CopyRight. Manuel Gutierrez & Oscar López</h11>
+	</ul>
+</footer>
+    </body>
+</html>
